@@ -1,8 +1,9 @@
 # resource-collection
-article:
+- article:
+
 [Instrumentation 新功能](https://www.ibm.com/developerworks/cn/java/j-lo-jse61/)
 
-orderId:
+- orderId:
 ```java
 public long generateOrderId(long spliterKeyId) throws DAOException {
         long id = x;//获取基础id,通常数据库表保存一个递增的id
