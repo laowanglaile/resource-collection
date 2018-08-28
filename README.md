@@ -1,6 +1,6 @@
 # resource-collection
 article:
-https://www.ibm.com/developerworks/cn/java/j-lo-jse61/
+[Instrumentation 新功能](https://www.ibm.com/developerworks/cn/java/j-lo-jse61/)
 
 orderId:
 ```java
