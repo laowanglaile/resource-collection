@@ -3,6 +3,8 @@
 
 [Instrumentation 新功能](https://www.ibm.com/developerworks/cn/java/j-lo-jse61/)
 
+[jvm attach机制实现](http://lovestblog.cn/blog/2014/06/18/jvm-attach/)
+
 - orderId:
 ```java
 public long generateOrderId(long spliterKeyId) throws DAOException {
