@@ -48,6 +48,10 @@
 
 [Spring Statemachine](https://projects.spring.io/spring-statemachine/)
 
+[spring状态机参考-1](https://www.jianshu.com/p/bbee41d8defb)
+
+[spring状态机参考-2](https://www.jianshu.com/p/326bd3ac2bf2)
+
 
 
 
