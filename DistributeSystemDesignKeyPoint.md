@@ -5,7 +5,7 @@
 ```
   dns负载均衡(静态资源)
   反向代理+负载均衡(nginx主备)
-  全链路日志(flume+kafka+elasticsearch)
+  全链路日志(https://www.elastic.co/cn/elk-stack)
   数据库集群(mysql)
   缓存集群(redis,memcached)
   nosql存储(mongodb,hbase)
@@ -39,6 +39,8 @@
 [elasticjob.io](http://elasticjob.io/)
 
 [shardingsphere.io](shardingsphere.io)
+
+[elk](https://www.elastic.co/cn/elk-stack)
 ## 设计要素
 ```
   restful api(授权信息,md5摘要)
