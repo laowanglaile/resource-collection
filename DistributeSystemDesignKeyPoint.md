@@ -36,6 +36,8 @@
   调用链
   动态配置中心
 ```
+[elasticjob.io](http://elasticjob.io/)
+[shardingsphere.io](shardingsphere.io)
 ## 设计要素
 ```
   restful api(授权信息,md5摘要)
