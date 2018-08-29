@@ -35,12 +35,22 @@
   单点登录
   调用链
   动态配置中心
+  状态机(Spring Statemachine)
+  流程引擎()
 ```
+[分布式系统理论](https://zhuanlan.zhihu.com/distributed?utm_source=com.jianshu.haruki&utm_medium=social)
+
 [elasticjob.io](http://elasticjob.io/)
 
 [shardingsphere.io](shardingsphere.io)
 
 [elk](https://www.elastic.co/cn/elk-stack)
+
+[Spring Statemachine](https://projects.spring.io/spring-statemachine/)
+
+
+
+
 ## 设计要素
 ```
   restful api(授权信息,md5摘要)
