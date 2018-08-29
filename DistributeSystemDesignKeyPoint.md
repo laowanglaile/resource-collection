@@ -1,5 +1,5 @@
 
-# 电商交易系统设计要点
+# 分布式系统设计要点
 
 ## 基础设施
 ```
@@ -37,6 +37,7 @@
   动态配置中心
 ```
 [elasticjob.io](http://elasticjob.io/)
+
 [shardingsphere.io](shardingsphere.io)
 ## 设计要素
 ```
