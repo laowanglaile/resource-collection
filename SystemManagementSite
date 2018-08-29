@@ -1,6 +1,7 @@
-url map
+Urlmap
 
 index2.htm
+    |___应用首页(/apps/detail.htm?app=mx-trade)
     |___应用选择列表(/beanfield/selectApp2.htm)
               |____动态开关:某个应用机器列表(/beanfield/beanfieldDimension2.htm?app=mx-trade&appId=-1)
                           |__某台机器动态开关列表(/beanfield/queryRemoteBeanfield2.htm?app=mx-trade&machineName=11.162.87.29&ip=11.162.87.29&port=7001)
@@ -23,3 +24,22 @@ index2.htm
                                     |__具体方法设置(/invoker/invokeAMethod2.htm)
                                        参数:app=mx-trade&machineName=11.162.87.29&ip=11.162.87.29&port=7001&beanName=eticketOpenServiceImpl&signature=ateyeQueryEtickets%28java.lang.String%29&paramCount=1&param1=%7B%27mainOrderid%27%A3%BA1234567%7D&type1=java.lang.String%2F
                |__添加应用(/manage/app/addApp2.htm)
+               |__机器管理
+                     |__机器列表(/machine/opsList.htm?app=mx-trade&appId=-1)
+                     |__添加机器(/machine/addOps.htm?app=mx-trade)
+                     |__同步机器列表(/machine/refresh.htm?appName=mx-trade)
+               |__日志级别调整
+                     |__机器列表(/logLevel/queryAppMachinesList2.htm?app=mx-trade&appId=-1)
+                     |__特定机器日志logger列表(/logLevel/queryRemoteLoggers2.htm)
+                        参数:app=mx-trade&type=LOGCONTROL&operate=getLoggers&ip=11.164.193.98&port=7001
+                     |__修改日志级别(/logLevel/updateLoggerLevel2Client2.htm)
+                        参数:level=DEBUG&ip=11.164.193.98&port=7001&name=root&app=mx-trade&logtype=LOG4J
+
+               |__监控:分类异常(/monitor/exceptionList.htm?app=mx-trade)
+               |__监控:逐条(/monitor/overview.htm?app=mx-trade)
+               |__监控:异常大盘(/hubmonitor/viewVirtualView.htm?uuid=s001_mx-trade)
+               |__监控:kv埋点(/hubmonitor/monitorLog.htm?app=mx-trade)
+                       |__对比(/hubmonitor/monitorCompare.htm?app=mx-trade&key1=%2523RT%2523tair%25E7%259B%2591%25E6%258E%25A7&key2=235)
+                       |__详情(/hubmonitor/monitorTree.htm)
+                          参数:app=mx-trade&startDate=2018-08-29&endDate=2018-08-30&key1=%2523RT%2523TYPE_ROLLBACK_CANCEL_LOCK_TICKET
+
