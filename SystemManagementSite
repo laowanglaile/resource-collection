@@ -1,0 +1,11 @@
+maieye urlmap
+
+index2.htm
+    |___应用动态开关(/beanfield/selectApp2.htm)
+              |____某个应用机器列表(/beanfield/beanfieldDimension2.htm?app=mx-trade&appId=-1)
+                          |__某台机器动态开关列表(/beanfield/queryRemoteBeanfield2.htm?app=mx-trade&machineName=11.162.87.29&ip=11.162.87.29&port=7001)
+                                   |___修改某个开关值(/beanfield/setBeanFieldAjax.htm)
+                                       form参数:ip=11.162.87.29&app=mx-trade&machineName=11.162.87.29&port=7001&beanName=switchController&fieldName=autoUnlockTime&oldValue=15&valueType=0&newValue=15&persist=false
+
+                                   |___查看修改历史(/audit/opHistory2.htm)
+                                       参数:appName=mx-trade&ip=11.162.87.29&name=switchController&field=autoUnlockTime&type=0
