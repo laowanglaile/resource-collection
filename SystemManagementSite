@@ -1,45 +1,50 @@
-Urlmap
+maieye urlmap
 
 index2.htm
-    |___应用首页(/apps/detail.htm?app=mx-trade)
+    |___应用首页(/apps/detail.htm?app=app-name)
     |___应用选择列表(/beanfield/selectApp2.htm)
-              |____动态开关:某个应用机器列表(/beanfield/beanfieldDimension2.htm?app=mx-trade&appId=-1)
-                          |__某台机器动态开关列表(/beanfield/queryRemoteBeanfield2.htm?app=mx-trade&machineName=11.162.87.29&ip=11.162.87.29&port=7001)
+              |____动态开关:某个应用机器列表(/beanfield/beanfieldDimension2.htm?app=app-name&appId=-1)
+                          |__某台机器动态开关列表(/beanfield/queryRemoteBeanfield2.htm?app=app-name&machineName=11.162.87.29&ip=11.162.87.29&port=7001)
                                    |___修改某个开关值(/beanfield/setBeanFieldAjax.htm)
-                                       form参数:ip=11.162.87.29&app=mx-trade&machineName=11.162.87.29&port=7001&beanName=switchController&fieldName=autoUnlockTime&oldValue=15&valueType=0&newValue=15&persist=false
+                                       form参数:ip=11.162.87.29&app=app-name&machineName=11.162.87.29&port=7001&beanName=switchController&fieldName=autoUnlockTime&oldValue=15&valueType=0&newValue=15&persist=false
 
                                    |___查看修改历史(/audit/opHistory2.htm)
-                                       参数:appName=mx-trade&ip=11.162.87.29&name=switchController&field=autoUnlockTime&type=0
-               |___方法调用:某个应用机器列表(/invoker/invokerDimension2.htm?app=mx-trade&appId=-1)
-                           |__同步机器列表(/machine/refresh.htm?appName=mx-trade)
-                           |__查看集群操作历史(/audit/opHistory2.htm?appName=mx-trade&type=1)
-                           |__批量设置方法列表(/invoker/listAllInvokersOfAnApp2.htm?app=mx-trade)
+                                       参数:appName=app-name&ip=11.162.87.29&name=switchController&field=autoUnlockTime&type=0
+               |___方法调用:某个应用机器列表(/invoker/invokerDimension2.htm?app=app-name&appId=-1)
+                           |__同步机器列表(/machine/refresh.htm?appName=app-name)
+                           |__查看集群操作历史(/audit/opHistory2.htm?appName=app-name&type=1)
+                           |__批量设置方法列表(/invoker/listAllInvokersOfAnApp2.htm?app=app-name)
                                     |__具体方法详情(/invoker/querySingleInvoker_Batch2.htm)
-                                       参数:app=mx-trade&beanName=eticketOpenServiceImpl&signature=ateyeQueryEtickets(java.lang.String)
+                                       参数:app=app-name&beanName=eticketOpenServiceImpl&signature=ateyeQueryEtickets(java.lang.String)
                                              |__批量设置(http://maieye.taobao.net/invoker/invokeAMethod_Batch2.htm)
-                                                参数:app=mx-trade&beanName=eticketOpenServiceImpl&signature=ateyeQueryEtickets%28java.lang.String%29&paramCount=1&param1=%7B%27mainOrderid%27%3A123456%7D&type1=java.lang.String%2F
-                            |__单台机器方法列表(invoker/queryRemoteInvokers2.htm?app=mx-trade&machineName=11.162.87.29&ip=11.162.87.29&port=7001)
+                                                参数:app=app-name&beanName=eticketOpenServiceImpl&signature=ateyeQueryEtickets%28java.lang.String%29&paramCount=1&param1=%7B%27mainOrderid%27%3A123456%7D&type1=java.lang.String%2F
+                            |__单台机器方法列表(invoker/queryRemoteInvokers2.htm?app=app-name&machineName=11.162.87.29&ip=11.162.87.29&port=7001)
                                     |__具体方法详情(/invoker/querySingleInvoker2.htm)
-                                       参数:app=mx-trade&machineName=11.162.87.29&ip=11.162.87.29&port=7001&beanName=eticketOpenServiceImpl&signature=ateyeQueryEtickets(java.lang.String)
+                                       参数:app=app-name&machineName=11.162.87.29&ip=11.162.87.29&port=7001&beanName=eticketOpenServiceImpl&signature=ateyeQueryEtickets(java.lang.String)
                                     |__具体方法设置(/invoker/invokeAMethod2.htm)
-                                       参数:app=mx-trade&machineName=11.162.87.29&ip=11.162.87.29&port=7001&beanName=eticketOpenServiceImpl&signature=ateyeQueryEtickets%28java.lang.String%29&paramCount=1&param1=%7B%27mainOrderid%27%A3%BA1234567%7D&type1=java.lang.String%2F
+                                       参数:app=app-name&machineName=11.162.87.29&ip=11.162.87.29&port=7001&beanName=eticketOpenServiceImpl&signature=ateyeQueryEtickets%28java.lang.String%29&paramCount=1&param1=%7B%27mainOrderid%27%A3%BA1234567%7D&type1=java.lang.String%2F
                |__添加应用(/manage/app/addApp2.htm)
                |__机器管理
-                     |__机器列表(/machine/opsList.htm?app=mx-trade&appId=-1)
-                     |__添加机器(/machine/addOps.htm?app=mx-trade)
-                     |__同步机器列表(/machine/refresh.htm?appName=mx-trade)
+                     |__机器列表(/machine/opsList.htm?app=app-name&appId=-1)
+                     |__添加机器(/machine/addOps.htm?app=app-name)
+                     |__同步机器列表(/machine/refresh.htm?appName=app-name)
                |__日志级别调整
-                     |__机器列表(/logLevel/queryAppMachinesList2.htm?app=mx-trade&appId=-1)
+                     |__机器列表(/logLevel/queryAppMachinesList2.htm?app=app-name&appId=-1)
                      |__特定机器日志logger列表(/logLevel/queryRemoteLoggers2.htm)
-                        参数:app=mx-trade&type=LOGCONTROL&operate=getLoggers&ip=11.164.193.98&port=7001
+                        参数:app=app-name&type=LOGCONTROL&operate=getLoggers&ip=11.164.193.98&port=7001
                      |__修改日志级别(/logLevel/updateLoggerLevel2Client2.htm)
-                        参数:level=DEBUG&ip=11.164.193.98&port=7001&name=root&app=mx-trade&logtype=LOG4J
+                        参数:level=DEBUG&ip=11.164.193.98&port=7001&name=root&app=app-name&logtype=LOG4J
 
-               |__监控:分类异常(/monitor/exceptionList.htm?app=mx-trade)
-               |__监控:逐条(/monitor/overview.htm?app=mx-trade)
-               |__监控:异常大盘(/hubmonitor/viewVirtualView.htm?uuid=s001_mx-trade)
-               |__监控:kv埋点(/hubmonitor/monitorLog.htm?app=mx-trade)
-                       |__对比(/hubmonitor/monitorCompare.htm?app=mx-trade&key1=%2523RT%2523tair%25E7%259B%2591%25E6%258E%25A7&key2=235)
+               |__监控:分类异常(/monitor/exceptionList.htm?app=app-name)
+               |__监控:逐条(/monitor/overview.htm?app=app-name)
+               |__监控:异常大盘(/hubmonitor/viewVirtualView.htm?uuid=s001_app-name)
+               |__监控:kv埋点(/hubmonitor/monitorLog.htm?app=app-name)
+                       |__对比(/hubmonitor/monitorCompare.htm?app=app-name&key1=%2523RT%2523tair%25E7%259B%2591%25E6%258E%25A7&key2=235)
                        |__详情(/hubmonitor/monitorTree.htm)
-                          参数:app=mx-trade&startDate=2018-08-29&endDate=2018-08-30&key1=%2523RT%2523TYPE_ROLLBACK_CANCEL_LOCK_TICKET
-
+                          参数:app=app-name&startDate=2018-08-29&endDate=2018-08-30&key1=%2523RT%2523TYPE_ROLLBACK_CANCEL_LOCK_TICKET
+               |__监控:服务关系(/arch/serviceDetail.htm?app=app-name)
+               |__监控:线程监控-机器列表(ops/threadOpsList.htm?app=app-name&appId=-1)
+                             |__特定机器线程(/ops/viewThreads.htm?dns_ip=11.128.119.176&app=app-name&port=7001)
+               |__监控:系统变量监控-机器列表(/ops/envOpsList.htm?app=app-name&appId=-1)
+               				 |__特定机器系统变量(/ops/viewSystemInfo.htm?dns_ip=11.128.119.176&app=app-name&port=7001)
+               |__监控:报警设置(/hubmonitor/appAlarmConfigList.htm?appName=app-name)
